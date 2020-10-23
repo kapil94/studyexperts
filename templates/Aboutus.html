@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+    <style>
+    ul{
+        list-style: none;
+        
+    }
+    li{
+        display: inline;
+        margin:5px 5px;
+    }
+    .nave-align{
+        margin-left:50%;
+    }
+    
+    .nav-style{
+      background-color: yellow;
+    }
+    
+    
+    .col-sm-3{
+    width:25vh;
+    height:25vh;
+    border: 1px solid black;
+    margin-left: 10vh;
+    margin-top: 20vh;
+    
+    }
+    .row{
+    height:100vh;
+    border:2px solid red;
+    }
+    .img-container{
+    
+      border:1px solid black;
+      background-color: black;
+      height:50vh;
+      width: auto;
+    }
+    .heading
+    {
+    color: white;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size: 10vh;
+    text-align: center;
+    margin: auto;
+    padding-top:75px;
+    
+    }
+    .sub-heading{
+      color:white;
+      text-align: center;
+      font-size:5vh;
+      font-style: italic;
+      padding-bottom:10px;  
+    }
+    .footer-styling{
+      height:10vh;
+      background-color:black;
+    }
+    </style>
+    </head>
+
+    <body>
+    
+    
+        <nav class="navbar navbar-expand-lg navbar-light nav-style">
+            <a class="navbar-brand" href="index.html"><b>Study Experts</b></a>
+             
+            <div class="nave-align" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('index')}}">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="Aboutus.html">About us<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                
+              </ul>
+          
+          </nav>
+
+          <div class="container-fluid">
+            <h1></h1>
+            </div>
+         
+    </body>
+
+</html>
