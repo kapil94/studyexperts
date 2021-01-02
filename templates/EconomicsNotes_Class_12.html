@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/mystyle.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="prev-text">
+    <h1>Economics Study notes</h1>
+    <table class="table prev-table">
+
+    <tbody>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Ch-1' )}}'">Ch-1 notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Ch-2' )}}'">Ch-2 notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Ch-3' )}}'">Ch-3 notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Ch-4' )}}'">Ch-4 notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Ch-5' )}}'">Ch-5 notes</button></td>
+      </tr>
+       <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Ch-6' )}}'">Ch-6 notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='Comparative' )}}'">COMPARATIVE DEVELOPMENT EXPERIENCE OF INDIA AND ITS notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='growth' )}}'">EMPLOYMENT GROWTH AND OTHER ISSUES notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='sustainable' )}}'">ENVIRONMENT AND SUSTAINABLE DEVELOPMENT notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='capital' )}}'">HUMAN CAPITAL FORMATION IN INDIA notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='economy' )}}'">INDIAN ECONOMY 1950-1990 notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='eve' )}}'">INDIAN ECONOMY ON THE EVE OF INDEPENDENCE CH-1notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='infrastructure' )}}'">INFRASTRUCTURE notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='liberal' )}}'">LIBERALIZATION, PRIVATIZATION AND GLOBALIZATION notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='poverty' )}}'">POVERTY notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EconomicsNotesClass12',chapter_name='rural' )}}'">RURAL DEVELOPMENT notes</button></td>
+      </tr>
+	
+    </tbody>
+  </table>
+   <script src="{{ url_for('static',filename='extern.js') }}"></script>
+  </body>
+</html>

@@ -32,3 +32,14 @@ $("#pol-prev").click(function(){
 
 console.log("Hello");
 });
+
+$(".dropdown-toggle").click(function(){
+
+$(".drop_down").toggle();
+
+});
+
+$(document).click(function(){
+  $("").hide();
+});
+

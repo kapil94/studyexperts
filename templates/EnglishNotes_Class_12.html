@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/mystyle.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="prev-text">
+    <h1>English Study notes</h1>
+    <table class="table prev-table">
+
+    <tbody>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12', questions='slum')}}'" >An elementary school classroom in a slum notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='thing' )}}'">A Thing of Beauty notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='aunt' )}}'">Aunt jennifers tigers notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='deep' )}}'">Deep water notes</button></td>
+      </tr>
+       <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='evans' )}}'">Evans tries an O-level  notes</button>
+        <td>
+      </tr>
+ 	<tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='indigo' )}}'">Indigo notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='quiet' )}}'">keeping quiet notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='lost' )}}'">Lost spring notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='sixty' )}}'">My Mother at Sixty Six notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='face' )}}'">On the face of it notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='wizard' )}}'">Should wizard hit mommy notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='enemy' )}}'">The Enemy notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='last' )}}'">The last lesson notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='rattrap' )}}'">The Rattrap notes</button>
+        <td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('EnglishImpClass12',questions='Third' )}}'">The Third level notes</button>
+        <td>
+      </tr>
+    </tbody>
+  </table>
+   <script src="{{ url_for('static',filename='extern.js') }}"></script>
+  </body>
+</html>

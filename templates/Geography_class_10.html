@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+	<style>
+	ul{
+    list-style: none;
+
+}
+li{
+    display: inline;
+    margin:5px 5px;
+}
+.nave-align{
+    margin-left:50%;
+}
+
+.nav-style{
+  background-color: #FFFF33;
+  position:fixed;
+}
+/* political sc. column*/
+.prev-table{
+  margin-left:35%;
+
+}
+.prev-text{
+  text-align: center;
+  padding-top: 10px;
+}
+.btn-prev{
+  width: 100%;
+}
+
+/* .col-sm-3{
+width:25vh;
+height:25vh;
+border: 1px solid yellow;
+box-shadow: 5px 10px yellowgreen;
+border-radius: 20%;
+
+
+} */
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  width: 75%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.close-btn {
+  float: right;
+  color: lightgray;
+  font-size: 24px;
+  font-weight: bold;
+}
+.close-btn:hover {
+  color: darkgray;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.row{
+height:100vh;
+}
+.img-container{
+  background-color: black !important;
+}
+.jumbotron{
+  height:75vh;
+}
+.heading
+{
+color: white;
+font-family:"Arial Black", Gadget, sans-serif;
+font-size: 10vh;
+text-align: center;
+padding-top:10vh;
+margin: auto;
+}
+.subjects{
+  font-family:"Arial Black", Gadget, sans-serif;
+  font-size:2vw;
+  text-align: center;
+  padding-top:5vh;
+}
+.sub-heading{
+  color:white;
+  text-align: center;
+  font-size:5vh;
+  font-style: italic;
+
+}
+.footer-styling{
+  height:20vh;
+  background-color:black;
+}
+marquee{
+color: white;
+font-size: 3vh;
+}
+
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 10vh;
+  color:black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 10vh;
+  color:black;
+}
+.carousel-control-prev-icon{
+  margin-top: 55vh;
+}
+.carousel-control-next-icon{
+  margin-top:55vh;
+}
+.table{
+  text-align: center;
+  margin-top:10vh;
+  max-width:50vh;
+  height:40vh;
+
+}
+.text-action{
+  overflow-y:scroll;
+}
+.subject-section{
+  text-align:center;
+}
+.btn-lg{
+  width:35vh;
+  height:10vh
+}
+.subject-heading{
+  text-align: center;
+  font-size: 5vh;
+  padding-bottom: 1vh;
+  height:10vh;
+}
+
+
+.carousal-size{
+   height:100vh;
+
+}
+
+@media only screen and (max-width:600px){
+
+  .row{
+    max-height:100vh;
+    }
+    .carousal-size{
+      height:100vh;
+   }
+  .col-sm-3{
+
+    max-width:30vw;
+    max-height:60vh;
+
+    border: 1px solid yellow;
+    box-shadow: 5px 10px yellowgreen;
+    border-radius: 20%;
+    margin-left:3vh;
+    margin-top:8vh;
+  }
+
+  .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 5vh;
+  color:black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 5vh;
+  color:black;
+}
+.carousel-control-prev-icon{
+  margin-top: 45vh;
+}
+.carousel-control-next-icon{
+  margin-top:45vh;
+}
+
+.table{
+  text-align: center;
+  margin-top:5vh;
+  max-width:25vw;
+  height:40vh;
+
+}
+
+.btn-size{
+  height:5vh;
+  width:10vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+}
+@media only screen and (min-width:1080px){
+  .col-sm-3{
+    width:35vh;
+    height:70vh;
+    border: 1px solid yellow;
+    box-shadow: 5px 10px yellowgreen;
+    border-radius: 20%;
+    margin-left:12vh;
+    margin-top:5vh;
+  }
+
+  .btn-size{
+    height:10vh;
+    width:100%;
+
+  }
+
+}
+
+@media only screen and (max-width:1080px) and (min-width:600px){
+
+  .col-sm-3{
+    max-width:30vw;
+    max-height:60vh;
+    border: 1px solid yellow;
+    box-shadow: 5px 10px yellowgreen;
+    border-radius: 20%;
+    margin-left:5vh;
+    margin-top:5vh;
+  }
+
+  .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 5vh;
+  color:black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 5vh;
+  color:black;
+}
+.carousel-control-prev-icon{
+  margin-top: 45vh;
+}
+.carousel-control-next-icon{
+  margin-top:45vh;
+}
+.table{
+  text-align: center;
+  margin-top:5vh;
+  max-width:25vw;
+  height:30vh;
+
+}
+.btn-size{
+  max-height:7vh;
+  max-width:15vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+  }
+#myModal{
+  border: 2px solid red;
+  width: 10vh;
+  height: 50vh;
+}
+    	</style>
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/mystyle.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="prev-text">
+    <h1>Geography</h1>
+    <table class="table prev-table">
+
+    <tbody>
+          
+	<tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('geoimp')}}'">Important Questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('geonotes')}}'" >Study Notes</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('geoncert')}}'" >Ncert Questions</button></td>
+      </tr>
+    </tbody>
+  </table>
+   <script src="{{ url_for('static',filename='extern.js') }}"></script>
+  </body>
+</html>

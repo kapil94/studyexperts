@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/mystyle.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="prev-text">
+    <h1>Political Science Study notes</h1>
+    <table class="table prev-table">
+
+    <tbody>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12', chapter_name='1')}}'" >Book1 Chapter1</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='2' )}}'">Book1 Chapter2</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='3' )}}'">Book1 Chapter3</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='4' )}}'">Book1 Chapter4</button></td>
+      </tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='5' )}}'">Book1 Chapter5</button></td>
+	</tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='6' )}}'">Book1 Chapter6</button></td>
+	</tr>
+
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='7' )}}'">Book1 Chapter9</button></td>
+	</tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='8' )}}'">Book2 Chapter1</button></td>
+	</tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='9' )}}'">Book2 Chapter2</button></td>
+	</tr>
+
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='10' )}}'">Book2 Chapter3</button></td>
+	</tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='11' )}}'">Book2 Chapter4</button></td>
+	</tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='12' )}}'">Book2 Chapter5</button></td>
+	</tr>
+	<tr>
+            <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('politicalnotes12',chapter_name='13' )}}'">Book2 Chapter6</button></td>
+	</tr>
+      
+    </tbody>
+  </table>
+   <script src="{{ url_for('static',filename='extern.js') }}"></script>
+  </body>
+</html>

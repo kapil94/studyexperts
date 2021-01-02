@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/mystyle.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="prev-text">
+    <h1>History Important questions</h1>
+    <table class="table prev-table">
+
+    <tbody>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12', questions='imperial')}}'" >an Imperial capital vijayanagar-important questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='sufi' )}}'">Bhakti-sufi traditions Important questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='beads' )}}'">Bricks, Beads and Bones The Harappan Civilisation Important Questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='kings' )}}'">kings and chronicles Important questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='farmers' )}}'">Kings,farmers and towns Important questions</button></td>
+      </tr>
+       <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='caste' )}}'">Kinship,caste and class Important questions</button></td>
+      </tr>
+ 	<tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='peasants' )}}'">peasants,zamindars and state Important questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='Thinkers' )}}'">Thinkers,belief,buildingsculture development Important questions</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-light btn-prev" onclick="window.location.href='{{url_for('HistoryImpClass12',questions='eyes' )}}'">Through the eyes of travellers Important questions</button></td>
+      </tr>
+    </tbody>
+  </table>
+   <script src="{{ url_for('static',filename='extern.js') }}"></script>
+  </body>
+</html>

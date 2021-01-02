@@ -11,7 +11,7 @@
 
 
    <nav class="navbar navbar-expand-lg navbar-light nav-style">
-       <a class="navbar-brand" href="index.html"><b>Study Experts</b></a>
+       <a class="navbar-brand"><b>Study Experts</b></a>
        <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -22,14 +22,17 @@
              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="{{ url_for('aboutus') }}">About us</a>
+             <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Syllabus
+  </button>
+  <div class="dropdown-menu drop_down" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item Item1"><button  style="border:none;" type="button" onclick="window.open('{{url_for('Syllabus_class_10')}}')">Class 10</button></a>
+    <a class="dropdown-item Item2"><button style="border:none;" type="button" onclick="window.open('{{url_for('Syllabus_class_12')}}')">Class 12</button></a>
+  </div>
+</div>
            </li>
-           <li class="nav-item">
-               <a class="nav-link" href="#">Our work</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#">Contact us</a>
-             </li>
+          
 
          </ul>
 
@@ -57,20 +60,16 @@
                    <table class="table table-borderless">
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size" 		                onclick="window.location.href='{{url_for('polprev')}}'" target="_blank">Previous Year Exams</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" 		                onclick="window.open('{{url_for('polX')}}')">Class 10</button>
 
                        </td>
                      </tr>
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Study Notes</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" onclick="window.open('{{url_for('polXII')}}')">Class 12</button>
                        </td>
                      </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Imp. Questions</button>
-                       </td>
-                     </tr>
+                     
                    </table>
                  </div>
                  <div class="col-sm-3">
@@ -78,19 +77,16 @@
                    <table class="table table-borderless">
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Previous Year Exams</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" onclick="window.open('{{url_for('English_Class_10')}}')">Class 10</button>
+
                        </td>
                      </tr>
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Study Notes</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" onclick="window.open('{{url_for('English_Class_12')}}')">Class 12</button>
                        </td>
                      </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Imp. Questions</button>
-                       </td>
-                     </tr>
+                    
                    </table>
                  </div>
                  <div class="col-sm-3">
@@ -98,19 +94,16 @@
                    <table class="table table-borderless">
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Previous Year Exams</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" 		                 onclick="window.open('{{url_for('History_Class_10')}}')">Class 10</button>
+
                        </td>
                      </tr>
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Study Notes</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" onclick="window.open('{{url_for('History_Class_12')}}')">Class 12</button>
                        </td>
                      </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Imp. Questions</button>
-                       </td>
-                     </tr>
+                     
                    </table>
                  </div>
                </div>
@@ -118,65 +111,41 @@
              <div class="carousel-item item1">
                  <div class="row">
                    <div class="col-sm-3">
-                   <h2 class="subjects">Maths</h2>
-                   <table class="table table-borderless">
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Previous Year Exams</button>
-                       </td>
-                     </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Study Notes</button>
-                       </td>
-                     </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Imp. Questions</button>
-                       </td>
-                     </tr>
-                   </table>
-                 </div>
-                 <div class="col-sm-3">
-                   <h2 class="subjects">Science</h2>
-                   <table class="table table-borderless">
-                    <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Previous Year Exams</button>
-                       </td>
-                     </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Study Notes</button>
-                       </td>
-                     </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Imp. Questions</button>
-                       </td>
-                     </tr>
-                   </table>
-                 </div>
-                 <div class="col-sm-3">
                    <h2 class="subjects">Geography</h2>
                    <table class="table table-borderless">
                      <tr>
+                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Previous Year Exams</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" 		                 onclick="window.open('{{url_for('Geography_Class_10')}}')">Class 10</button>
+
                        </td>
                      </tr>
                      <tr>
                        <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Study Notes</button>
+                         <button type="button" class="btn btn-outline-warning btn-size" onclick="window.open('{{url_for('Geography_Class_12')}}')">Class 12</button>
                        </td>
                      </tr>
-                     <tr>
-                       <td>
-                         <button type="button" class="btn btn-outline-warning btn-size">Imp. Questions</button>
-                       </td>
-                     </tr>
+                     
                    </table>
                  </div>
+                 <div class="col-sm-3">
+                   <h2 class="subjects">Economics</h2>
+                   <table class="table table-borderless">
+                   <tr>
+                       <td>
+                         <button type="button" class="btn btn-outline-warning btn-size" 		                onclick="window.open('{{url_for('Economics_Class_10')}}')">Class 10</button>
+
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         <button type="button" class="btn btn-outline-warning btn-size" onclick="window.open('{{url_for('Economics_Class_12')}}')">Class 12</button>
+                       </td>
+                     </tr>
+                     
+                   </table>
+                 </div>
+                 
              </div>
            </div>
          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
