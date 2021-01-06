@@ -13,6 +13,10 @@ BUCKET_NAME = 'testproject2'
 @app.route('/')
 def index():
 	return render_template("index.html")
+
+@app.errorhandler(Exception)
+def exception_handler(error):
+	return "!!!!"  + repr(error)
 	
 @app.route('/Syllabus/class 10/<string:chapter_name>')
 def syllabus_class_10(chapter_name):
@@ -1805,7 +1809,7 @@ def HistoryNotesClass12(chapter_name):
         	mimetype='text/plain',
         	headers={"Content-Disposition": "attachment;filename={}".format(key)}
     		)
-	
+    	
 
 @app.route('/History/Class 12/Ncert Questions/<string:questions>')
 def HistoryNcert_Class12(questions):
@@ -1868,5 +1872,5 @@ def HistoryNcert_Class12(questions):
     		)
 #################################################################################################################################
 
-#if __name__ == '__main__':	
-	#app.run(debug=True)
+if __name__ == '__main__':	
+	app.run()
